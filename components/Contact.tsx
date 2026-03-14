@@ -75,7 +75,7 @@ export default function Contact() {
                                         type="email"
                                         id="contact-email"
                                         name="Email"
-                                        placeholder="jane@example.com"
+                                        placeholder="jane@framer.com"
                                         required
                                     />
                                 </div>

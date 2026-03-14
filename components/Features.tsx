@@ -28,8 +28,8 @@ export default function Features() {
     return (
         <section className="features" id="features">
             <div className="container">
-                {/* Description Card */}
-                <div className="features__card reveal" ref={cardRef}>
+                {/* Description Text */}
+                <div className="features__text-block reveal" ref={cardRef}>
                     <p className="features__description">
                         Ein patentiertes System, das ohne Mehraufwand die mentale
                         Leistungsfähigkeit und das gesundheitliche Wohlbefinden Ihrer{" "}

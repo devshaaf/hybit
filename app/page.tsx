@@ -7,13 +7,7 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <>
-      {/* Background Floating Orbs */}
-      <div className="bg-orbs" aria-hidden="true">
-        <div className="orb orb-1" />
-        <div className="orb orb-2" />
-        <div className="orb orb-3" />
-      </div>
-
+      <div className="bg-fixed-gradient" aria-hidden="true" />
       <Navbar />
       <Hero />
       <Features />

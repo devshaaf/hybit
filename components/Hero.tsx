@@ -158,25 +158,6 @@ export default function Hero() {
         };
     }, []);
 
-    // Parallax effect (desktop only)
-    useEffect(() => {
-        if (window.innerWidth < 768) return;
-
-        const hero = document.querySelector(".hero") as HTMLElement;
-        if (!hero) return;
-
-        function handleScroll() {
-            const scrolled = window.scrollY;
-            if (scrolled < window.innerHeight) {
-                hero.style.transform = `translateY(${scrolled * 0.15}px)`;
-                hero.style.opacity = String(1 - scrolled / (window.innerHeight * 1.2));
-            }
-        }
-
-        window.addEventListener("scroll", handleScroll, { passive: true });
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
-
     return (
         <section className="hero" id="hero">
             {/* Neural Synapse Image + Sparkle Animation */}
@@ -201,19 +182,6 @@ export default function Hero() {
                 hybit NeuraFlow – für Contact Center, die mehr aus jedem Call herausholen
                 wollen.
             </p>
-            <div className="hero__scroll-hint" aria-hidden="true">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                >
-                    <path d="M12 5v14M19 12l-7 7-7-7" />
-                </svg>
-            </div>
         </section>
     );
 }
