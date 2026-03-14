@@ -46,10 +46,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="de">
+    <html lang="de" suppressHydrationWarning>
       <body
         className={`${inter.variable} ${sora.variable} ${montserrat.variable}`}
         style={{ fontFamily: "var(--font-inter)" }}
+        suppressHydrationWarning
       >
         {children}
       </body>

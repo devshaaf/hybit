@@ -49,9 +49,9 @@ export default function Features() {
                 {/* Video Embed */}
                 <div className="features__video-wrapper reveal" ref={videoRef}>
                     <iframe
-                        src="https://www.youtube.com/embed/z4aQ-Nf9ryk?rel=0&modestbranding=1"
+                        src="https://www.youtube-nocookie.com/embed/z4aQ-Nf9ryk?rel=0&modestbranding=1&showinfo=0&iv_load_policy=3&disablekb=0"
                         title="hybit NeuraFlow Video"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
                         loading="lazy"
                     />
