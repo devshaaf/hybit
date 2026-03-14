@@ -517,17 +517,7 @@ ol {
   pointer-events: none;
 }
 
-.contact::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, rgba(120, 131, 233, 0.12) 0%, transparent 70%);
-  pointer-events: none;
-}
+
 
 .contact__heading {
   font-size: clamp(2.5rem, 5vw, 3.5rem);
@@ -677,7 +667,88 @@ ol {
 /* ========================================
    RESPONSIVE
    ======================================== */
-@media (max-width: 480px) {
+/* Small mobile — 320px */
+@media (max-width: 360px) {
+  .container {
+    padding: 0 var(--space-sm);
+  }
+
+  .hero {
+    padding-top: calc(var(--nav-height) + var(--space-sm));
+    min-height: auto;
+    padding-bottom: var(--space-lg);
+  }
+
+  .hero__heading {
+    font-size: 1.4rem;
+    max-width: 280px;
+  }
+
+  .hero__subtitle {
+    font-size: 0.875rem;
+    max-width: 280px;
+  }
+
+  .hero__neural {
+    width: 80vw;
+  }
+
+  .navbar__logo-text {
+    font-size: 1.2rem;
+  }
+
+  .navbar__cta {
+    padding: 0.4rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .contact {
+    padding: var(--space-xl) var(--space-sm);
+    margin-top: var(--space-xl);
+  }
+
+  .contact__heading {
+    font-size: 2rem;
+    letter-spacing: -1px;
+  }
+
+  .contact__row {
+    flex-direction: column;
+  }
+
+  .contact__form {
+    max-width: 100%;
+  }
+
+  .features {
+    padding: var(--space-xl) var(--space-sm);
+  }
+
+  .features__card {
+    padding: var(--space-md) var(--space-sm);
+  }
+
+  .features__description {
+    font-size: 0.9rem;
+  }
+
+  .bg-orbs .orb-1 {
+    width: 200px;
+    height: 200px;
+  }
+
+  .bg-orbs .orb-2 {
+    width: 180px;
+    height: 180px;
+  }
+
+  .bg-orbs .orb-3 {
+    display: none;
+  }
+}
+
+/* Mobile */
+@media (min-width: 361px) and (max-width: 480px) {
   .contact__row {
     flex-direction: column;
   }
@@ -705,6 +776,7 @@ ol {
   }
 }
 
+/* Tablet */
 @media (min-width: 481px) and (max-width: 768px) {
   .hero__heading {
     font-size: 2.2rem;
@@ -715,6 +787,7 @@ ol {
   }
 }
 
+/* Desktop */
 @media (min-width: 1024px) {
   .features__card {
     padding: var(--space-xl) var(--space-2xl);
